@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site officiel — Votre Nom</title>
+    <meta
+      name="description"
+      content="Site officiel de Votre Nom, utilisé comme présence web publique pour vérification de compte TikTok."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #0ea5e9;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #020617;
+          --card: #0f172a;
+          --text: #e2e8f0;
+          --muted: #94a3b8;
+          --accent: #38bdf8;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: radial-gradient(circle at top, #7dd3fc22, transparent 40%), var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        max-width: 760px;
+        width: 100%;
+        background: var(--card);
+        border: 1px solid #94a3b833;
+        border-radius: 18px;
+        padding: 32px;
+        box-shadow: 0 20px 30px -24px #0f172a66;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #0ea5e91a;
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 0.88rem;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: white;
+        background: var(--accent);
+        padding: 10px 16px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+
+      .note {
+        margin-top: 22px;
+        font-size: 0.9rem;
+      }
+
+      strong.edit {
+        background: #facc1533;
+        color: #b45309;
+        padding: 0 5px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="badge">Site officiel</span>
+      <h1>Votre Nom</h1>
+      <p>
+        Bienvenue sur le site officiel de <strong>Votre Nom</strong>. Cette page confirme ma
+        présence publique et sert de référence pour mes comptes sociaux, notamment TikTok.
+      </p>
+      <p>
+        Je publie du contenu original sous le nom <strong>@votre_compte_tiktok</strong>. Pour une
+        vérification d'identité, vous pouvez utiliser ce site comme source officielle.
+      </p>
+
+      <div class="links">
+        <a href="https://www.tiktok.com/@votre_compte_tiktok" target="_blank" rel="noreferrer"
+          >Mon TikTok</a
+        >
+        <a href="mailto:contact@exemple.com">Contact pro</a>
+      </div>
+
+      <p class="note">
+        ⚠️ Remplacez les champs en <strong class="edit">jaune</strong> par vos informations réelles
+        avant publication (nom, @TikTok, email).
+      </p>
+    </main>
+  </body>
+</html>
